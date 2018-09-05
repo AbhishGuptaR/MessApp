@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".CartActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/carttextview"
+        android:text="Your Orders:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_margin="10dp"/>
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_below="@id/carttextview"
+        android:id="@+id/cartrecylerview"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CartActivity">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/cartrecylerview"
+        android:id="@+id/cartlinear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/carttotaltext"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:text="Total:"/>
+
+        <TextView
+            android:id="@+id/cartfinalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/carttotaltext"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cartfinalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Proceed To pay"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</LinearLayout>
+
+</ScrollView>

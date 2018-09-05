@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#49B9EA"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gradient"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#bac9e7"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/finallogowhite"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="170dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/rounded_bg"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textSize="16dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/emailfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+            android:hint="Enter your username"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="16dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/passwordfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_vector"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            android:backgroundTint="#d1d1d1"
+            android:background="@drawable/rounded_bg"
+            android:layout_gravity="center"
+            android:onClick="onLogin"/>
+
+        <TextView
+            android:id="@+id/CreateAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Create Account"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:text="Report an Issue!"
+        android:textColor="#000000"
+        />
+</RelativeLayout>
