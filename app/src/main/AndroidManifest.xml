@@ -23,7 +23,11 @@
         <activity android:name=".LoginScreen" />
         <activity android:name=".Register" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".CartActivity"></activity>
+        <activity android:name=".CartActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".AdminEdit" />
+        <activity android:name=".AdminLanding" />
+        <activity android:name=".AdminAdd"></activity>
     </application>
 
 </manifest>

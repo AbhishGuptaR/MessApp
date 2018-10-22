@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLanding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Panel"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        />
+
+    <Button
+        android:id="@+id/adminaddfood"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Food Item"
+        android:layout_gravity="center"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/adminsetmenu"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Menu"
+        android:layout_gravity="center"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/admineditfood"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit food item"
+        android:layout_gravity="center"
+        android:textSize="25sp"/>
+
+
+
+</LinearLayout>

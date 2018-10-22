@@ -48,9 +48,8 @@ public class MenuActivity extends AppCompatActivity {
         load_data_from_server(0);
 
 
-        final GridLayoutManager gridLayoutManager = new GridLayoutManager(this,1);
+        final GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(gridLayoutManager);
-
         customAdapter = new CustomAdapter(this,dataList);
         recyclerView.setAdapter(customAdapter);
 

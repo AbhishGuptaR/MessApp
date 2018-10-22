@@ -59,10 +59,16 @@ public class LoginScreen extends AppCompatActivity  {
     public void onLogin(View view){
         String username = email.getText().toString();
         String password = pass.getText().toString();
-        String type = "login";
-        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(type,username,password);
-        LoginScreen.this.finish();
+        if(username.equals("admin")&&(password.equals("admin"))){
+           Intent i = new Intent(this,AdminLanding.class);
+           startActivity(i);
+        }
+        else {
+            String type = "login";
+            BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+            backgroundWorker.execute(type, username, password);
+            LoginScreen.this.finish();
+        }
     }
 
 
